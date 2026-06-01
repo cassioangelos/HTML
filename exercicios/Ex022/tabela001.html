@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Minha primeira tabela</title>
     <style>
+        /*(border-collapse: collapse;) unir bordas*/
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
@@ -18,30 +19,43 @@
             padding: 8px;
             text-align: center;
         }
+        tr.linha {
+            background-color: aquamarine;
+        }
+        td.dado {
+            background-color: blue;
+        }
     </style>
 </head>
 <body>
     <table>
         <h1>Tabela</h1>
-        <tr>
-            <td>A1</td>
+        <tr><!--Primeira linha-->
+            <td>A1</td><!--Cluna (Dados)-->
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr>
+        <tr class="linha"><!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr>
+        <tr><!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="dado">C3</td>
         </tr>
-        <tr>
+        <tr><!--Quarta Linha-->
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
+        </tr>
+        <tr><!--Quinta linha-->
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr><!--Sexta linha-->
+            <td>A6</td>
         </tr>
     </table>
 </body>
