@@ -11,13 +11,15 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         table {
-            width: 400px;
+            width: 700px;
+            height: 700px;
             border-collapse: collapse;
         }
         td{
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+            text-align: right;
+            vertical-align: top;
         }
         tr.linha {
             background-color: aquamarine;
@@ -25,37 +27,63 @@
         td.dado {
             background-color: blue;
         }
+        .numero1 {
+            text-align: right;
+            vertical-align: middle;
+        }
+        .numero2 {
+            text-align: left;
+            vertical-align: middle;
+        }
+        .numero3 {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numero4 {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numero5 {
+            text-align: center;
+        }
+        .numero6 {
+            text-align: center;
+            vertical-align: bottom;
+        }
     </style>
 </head>
 <body>
     <table>
         <h1>Tabela</h1>
         <tr><!--Primeira linha-->
-            <td>A1</td><!--Cluna (Dados)-->
-            <td>B1</td>
-            <td>C1</td>
+            <td class="numero4">A1</td><!--Cluna (Dados)-->
+            <td class="numero5">B1</td>
+            <td class="numero4">C1</td>
         </tr>
         <tr class="linha"><!--Segunda linha-->
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td class="numero2">A2</td>
+            <td class="numero3">B2</td>
+            <td class="numero1">C2</td>
         </tr>
         <tr><!--Terceira linha-->
-            <td>A3</td>
-            <td>B3</td>
-            <td class="dado">C3</td>
+            <td class="numero2">A3</td>
+            <td class="numero3">B3</td>
+            <td class="numero1">C3</td>
         </tr>
         <tr><!--Quarta Linha-->
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+            <td class="numero2">A4</td>
+            <td class="numero3">B4</td>
+            <td class="numero1">C4</td>
         </tr>
         <tr><!--Quinta linha-->
-            <td>A5</td>
-            <td>B5</td>
+            <td class="numero2">A5</td>
+            <td class="numero3">B5</td>
+            <td class="numero1">C5</td>
         </tr>
         <tr><!--Sexta linha-->
-            <td>A6</td>
+            <td class="numero4">A6</td>
+            <td class="numero6">B6</td>
+            <td class="numero4">C6</td>
         </tr>
     </table>
 </body>
