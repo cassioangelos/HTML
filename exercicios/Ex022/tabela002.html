@@ -12,6 +12,12 @@
             padding: 10px;
             border: 1px solid black;
         }
+        caption {
+            background-color: lightseagreen;
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
         table {
             width: 500px;
             margin: auto;
@@ -34,9 +40,10 @@
     <h1>Tabelas grandes</h1>
     <table>
         <thead>
+            <caption>População por estados</caption>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
             
@@ -46,26 +53,58 @@
                 <td class="num">24.000</td>
             </tr>
             <tr>
-                <td>São Paulo</td>
+                <td>Minas Gerais</td>
                 <td class="num">24.000</td>
             </tr>
             <tr>
-                <td>São Paulo</td>
+                <td>Rio de Janeiro</td>
                 <td class="num">24.000</td>
             </tr>
             <tr>
-                <td>São Paulo</td>
+                <td>Bahia</td>
                 <td class="num">24.000</td>
             </tr>
             <tr>
-                <td>São Paulo</td>
+                <td>Sergipe</td>
+                <td class="num">24.000</td>
+            </tr>
+             <tr>
+                <td>Espirito Santo</td>
+                <td class="num">24.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">24.000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">24.000</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">24.000</td>
+            </tr>
+             <tr>
+                <td>João Pessoa</td>
+                <td class="num">24.000</td>
+            </tr>
+            <tr>
+                <td>Maranhã</optgroup></td>
+                <td class="num">24.000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">24.000</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
                 <td class="num">24.000</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>201.000.000</strong></td>
             </tr>
         </tfoot>
