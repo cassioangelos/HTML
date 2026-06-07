@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabela Responsiva</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bolder;
+        }
+        p {
+            text-align: justify;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 2em;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .prod {
+            background-color: lightgray
+        }
+        .mes {
+            background-color: lightskyblue
+        }
+        tfoot {
+            background-color: lightsalmon;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        div#container {
+            overflow-x: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magni necessitatibus vel expedita nobis sunt reiciendis accusantium pariatur voluptates error, architecto mollitia quia totam accusamus dignissimos est delectus vero maxime. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, accusantium? Quod eos ipsa libero, qui odio voluptas perferendis vitae ullam reiciendis itaque nobis quidem voluptate, consequuntur ab. Et, animi? Delectus?</p>
+    <div id="container">
+        <table>
+            <caption>Aparelhos Vendidos</caption>
+            <colgroup>
+                <col class="prod">
+                <col class="mes" span="12">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                    <th>Abril</th>
+                    <th>Maio</th>
+                    <th>Junho</th>
+                    <th>Julho</th>
+                    <th>Agosto</th>
+                    <th>Setembro</th>
+                    <th>Outubro</th>
+                    <th>Novembro</th>
+                    <th>Dezembro</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Televisão</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>74</td>
+                        <td>83</td>
+                        <td>90</td>
+                        <td>58</td>
+                        <td>43</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Celular</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>74</td>
+                        <td>83</td>
+                        <td>90</td>
+                        <td>58</td>
+                        <td>43</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Aparelho de som</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>74</td>
+                        <td>83</td>
+                        <td>90</td>
+                        <td>58</td>
+                        <td>43</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Computador</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>74</td>
+                        <td>83</td>
+                        <td>90</td>
+                        <td>58</td>
+                        <td>43</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Notebook</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>74</td>
+                        <td>83</td>
+                        <td>90</td>
+                        <td>58</td>
+                        <td>43</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Videogame</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>74</td>
+                        <td>83</td>
+                        <td>90</td>
+                        <td>58</td>
+                        <td>43</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Eletrodomestico</td>
+                        <td>12</td>
+                        <td>26</td>
+                        <td>34</td>
+                        <td>47</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>74</td>
+                        <td>83</td>
+                        <td>90</td>
+                        <td>58</td>
+                        <td>43</td>
+                        <td>24</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="13">Boas vendas neste ano 2026</td>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
