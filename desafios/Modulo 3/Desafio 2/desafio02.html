@@ -8,18 +8,40 @@
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Times, serif;
         }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            text-decoration: underline;
+        }
         table {
             border-collapse: collapse;
             margin: auto;
             width: 700px;
             height: 400px;
+            text-align: center;
+            box-shadow: 10px 10px 20px black;
         }
         caption {
             font-size: 2em;
             padding: 10px;
+            text-shadow: 10px 10px 20px black;
+            text-align: left;
         }
         th, td {
             border: 3px solid black;
+        }
+        .cabeca {
+            background-color: rgba(0, 0, 0, 0.606);
+            color: white;
+            font-size: 1.5em;
+        }
+        .cabeca1 {
+            background-color: darkgray;
+            font-size: 1.1em;
+        }
+        #alinha {
+            text-align: left;
+            padding-left: 10px;
         }
 
     </style>
@@ -29,11 +51,15 @@
     <table>
         <thead>
             <caption>Notas do Aluno</caption>
+            <tr class="cabeca">
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
             <tr>
-                <th scope="col">Área</th>
-                <th scope="col">Disciplina</th>
-                <th colspan="2" scope="colgroup">Notas
-                <th scope="col">Média</th>
+                <th scope="col" class="cabeca1">Notas 1</th>
+                <th scope="col" class="cabeca1">Notas 2</th>
             </tr>
         </thead>
         <tbody>
@@ -62,8 +88,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Exatas</th>
-                <td>0.0</td>
+                <th colspan="4" class="cabeca" id="alinha">Média de Exatas</th>
+                <td class="cabeca">0.0</td>
             </tr>
             <tr>
                 <th rowspan="2">Humanas</th>
@@ -79,8 +105,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Humanas</th>
-                <td>0.0</td>
+                <th colspan="4" class="cabeca" id="alinha">Média de Humanas</th>
+                <td class="cabeca">0.0</td>
             </tr>
         </tbody>
     </table>
